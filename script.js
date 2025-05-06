@@ -76,7 +76,7 @@ function animateBalloon(balloon, isSpecial) {
         balloon.style.bottom = bottom + 'px';
         balloon.style.left = (leftStart + Math.sin(bottom / 50) * 2) + '%';
 
-        const maxHeight = window.innerHeight * 0.8;
+        const maxHeight = window.innerHeight * 0.6;
         if (bottom < maxHeight) {
             requestAnimationFrame(rise);
         } else {
